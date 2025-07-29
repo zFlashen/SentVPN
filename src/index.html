@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="sentvpnicon.png">
+    <title>SentVPN - Быстрый и безопасный VPN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header -->
+    <header class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fas fa-bolt text-2xl mr-2"></i>
+                    <span class="font-bold text-xl">SentVPN</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-yellow-200 transition">Возможности</a>
+                    <a href="#pricing" class="hover:text-yellow-200 transition">Тарифы</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="#pricing" class="btn btn-secondary border-2 border-white/80 text-white px-4 py-2 rounded-lg font-medium hover:bg-white/25 hover:border-white hover:text-white transition-all duration-300 backdrop-blur-sm">Купить сейчас</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Безопасный и быстрый VPN для всех ваших устройств</h1>
+                <p class="text-xl mb-8 text-white-100">Защитите свою конфиденциальность, обходите ограничения и наслаждайтесь интернетом без границ с нашим премиальным VPN-сервисом.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <!-- Заменим текущие кнопки на -->
+                    <a href="#pricing" class="btn btn-primary px-8 py-4 rounded-lg font-bold text-lg text-center relative overflow-hidden">Попробовать бесплатно</a>
+                    <!-- Заменим текущую кнопку на -->
+                    <a href="#features" class="btn btn-secondary border-2 border-white/80 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/25 hover:border-white hover:text-white transition-all duration-300 backdrop-blur-sm">Узнать больше</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <img src="sentvpngraffity.png" alt="VPN Illustration" class="w-full h-auto max-w-lg mx-auto server-animation">
+                <div class="absolute -bottom-10 left-0 right-0 flex justify-center">
+                    <a href="#features" class="scroll-down text-white text-2xl animate-bounce">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Почему выбирают SentVPN?</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Наши передовые технологии обеспечивают максимальную безопасность и скорость соединения</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="hover-scale bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="feature-icon bg-yellow-100 text-yellow-600 mx-auto">
+                        <i class="fas fa-lock text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Отличная защита</h3>
+                    <p class="text-gray-600 text-center">256-битное AES шифрование защищает ваши данные как у военных и правительственных организаций.</p>
+                </div>
+                <div class="hover-scale bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="feature-icon bg-green-100 text-green-600 mx-auto">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Молниеносная скорость</h3>
+                    <p class="text-gray-600 text-center">Наша оптимизированная сеть обеспечивает скорость до 1 Гбит/с без ограничений трафика.</p>
+                </div>
+                <div class="hover-scale bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="feature-icon bg-purple-100 text-purple-600 mx-auto">
+                        <i class="fas fa-globe text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Глобальный доступ</h3>
+                    <p class="text-gray-600 text-center">Более 500 серверов в 60 странах позволяют получить доступ к любому контенту по всему миру.</p>
+                </div>
+                <div class="hover-scale bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="feature-icon bg-red-100 text-red-600 mx-auto">
+                        <i class="fas fa-user-shield text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Без логов</h3>
+                    <p class="text-gray-600 text-center">Мы не ведем журналы вашей активности - ваша конфиденциальность защищена на 100%.</p>
+                </div>
+                <div class="hover-scale bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="feature-icon bg-yellow-100 text-yellow-600 mx-auto">
+                        <i class="fas fa-desktop text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Мультиплатформенность</h3>
+                    <p class="text-gray-600 text-center">Одна подписка для всех устройств: Windows, Mac, iOS, Android, Linux и даже роутеры.</p>
+                </div>
+                <div class="hover-scale bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition">
+                    <div class="feature-icon bg-indigo-100 text-indigo-600 mx-auto">
+                        <i class="fas fa-headset text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Поддержка 24/7</h3>
+                    <p class="text-gray-600 text-center">Наша команда экспертов всегда готова помочь вам с любыми вопросами в любое время суток.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Выберите свой тарифный план</h2>
+            </div>
+            
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex rounded-md shadow-sm" role="group">
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="hover-scale pricing-card bg-white border border-gray-200 rounded-xl p-8 transition duration-300">
+                    <h3 class="text-xl font-bold mb-2">Базовый</h3>
+                    <p class="text-gray-600 mb-6">Для тех, кто хочет попробовать</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">₽150</span>
+                        <span class="text-gray-500">/месяц</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Неограниченное количество устройств одновременно</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Доступ к 1 стране</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Скорость до 200 Мбит/с</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Vless TCP Reality</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Без задержек</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-100 text-gray-800 py-3 rounded-lg font-medium hover:bg-gray-200 transition">Выбрать план</button>
+                </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bolt text-2xl mr-2"></i>
+                        <span class="font-bold text-xl">SentVPN</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Лучший VPN-сервис для защиты вашей конфиденциальности и свободы в интернете.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-reddit"></i></a>
+                    </div>
+                </div>
+                <div>
+            </div>
+                <div class="flex space-x-6">
+                    <a href="rules.html" class="text-gray-400 hover:text-white">Условия использования</a>
+                    <a href="privation.html" class="text-gray-400 hover:text-white">Политика конфиденциальности</a>
+                </div>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript файла -->
+    <script src="script.js"></script>
+</body>
+</html>
